@@ -1,0 +1,10 @@
+var express = require('express');
+var route = require('./app/routes/index.js');
+var app = express();
+app.use('/public', express.static(process.cwd() + '/public'));
+
+app.use('/controllers', express.static(process.cwd() + '/app/controllers'));
+route(app);
+app.listen(3000,function(){
+	console.log("listen to 3000");
+});
