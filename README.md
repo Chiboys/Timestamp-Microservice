@@ -1,6 +1,6 @@
 # Timestamp-Microservice
+将web app部署到heroku上，记录几点
 
-将web app部署到heroku上，记录几点：
   1.在app的顶级目录下，添加文件Procfile，注意无后缀。
        目的在于：告诉heroku怎么运行app
        内容：(此处是web服务器的运行命令)
