@@ -1,0 +1,14 @@
+module.exports = function(req,res,date){
+	var regex = /[a-z]/ig;
+	var date;
+		if(regex.test(req.params.data)){
+			date = new Date(req.params.data);	
+		}else{
+			date = new Date(parseInt(req.params.data)); 
+		}
+	var dateStr = {
+		"unix":date.getTime(),
+		"natural":date.toDateString()
+	};
+	res.json(dateStr);
+}

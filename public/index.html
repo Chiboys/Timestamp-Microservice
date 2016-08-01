@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Timestamp microservice</title>
+  <link href="/public/css/render.css" rel="stylesheet" type="text/css"/>
+ </head>
+ <body>
+	<h1>时间戳服务</h1>
+	<div>
+		<h3>功能说明</h3>
+		<ul>
+			<li>本服务会对你输入的地址进行检测：是否含有时间戳或者语言表示的日期 (比如: January 1, 2016)</li>
+			<li>如果有日期数据，本服务将返回两种上述提及的时间格式</li>
+			<li>如果没有，你将又看到本服务说明页面</li>
+		</ul>
+
+	</div>
+	<div>
+		<h3>输入范例</h3>
+		<ul>
+		<li>http://localhost:3000/timestamp/January%201,%202016</li>
+		<li>http://localhost:3000/timestamp/1451577600000</li>
+		</ul>
+	</div>
+	<div>
+		<h3>输出结果</h3>
+		<ul>
+		<li>{"unix":1451577600000,"natural":"Fri Jan 01 2016"}</li>
+		</ul>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,9 @@
+body{
+	background-color:rgb(199£¬237£¬204);
+}
+h1{
+	text-align:center;
+}
+div{
+	margin-left:20%;
+}
