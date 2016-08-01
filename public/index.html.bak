@@ -7,7 +7,7 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <title>Timestamp microservice</title>
-  <link href="/css/render.css" rel="stylesheet" type="text/css"/>
+  <link href="/public/css/render.css" rel="stylesheet" type="text/css"/>
  </head>
  <body>
 	<h1>时间戳服务</h1>
